@@ -115,6 +115,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    newrelic_rpm (6.2.0.354)
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -125,6 +126,10 @@ GEM
     rack (2.0.4)
     rack-test (0.8.3)
       rack (>= 1.0, < 3)
+    rack-tracker (1.9.0)
+      activesupport (>= 3.0)
+      rack (>= 1.4)
+      tilt (>= 1.4)
     rails (5.1.5)
       actioncable (= 5.1.5)
       actionmailer (= 5.1.5)
@@ -234,8 +239,10 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  newrelic_rpm
   pg (~> 0.21)
   puma (~> 3.7)
+  rack-tracker
   rails (~> 5.1.4)
   rails-erd
   rails_12factor
